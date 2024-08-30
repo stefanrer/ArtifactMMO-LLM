@@ -1,0 +1,608 @@
+{
+  "data": [
+    {
+      "name": "Chicken",
+      "code": "chicken",
+      "level": 1,
+      "hp": 60,
+      "attack_fire": 0,
+      "attack_earth": 0,
+      "attack_water": 4,
+      "attack_air": 0,
+      "res_fire": 0,
+      "res_earth": 0,
+      "res_water": 0,
+      "res_air": 0,
+      "min_gold": 0,
+      "max_gold": 1,
+      "drops": [
+        {
+          "code": "raw_chicken",
+          "rate": 20,
+          "min_quantity": 1,
+          "max_quantity": 1
+        },
+        {
+          "code": "egg",
+          "rate": 25,
+          "min_quantity": 1,
+          "max_quantity": 1
+        },
+        {
+          "code": "golden_egg",
+          "rate": 5000,
+          "min_quantity": 1,
+          "max_quantity": 1
+        },
+        {
+          "code": "feather",
+          "rate": 16,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Yellow Slime",
+      "code": "yellow_slime",
+      "level": 2,
+      "hp": 70,
+      "attack_fire": 0,
+      "attack_earth": 8,
+      "attack_water": 0,
+      "attack_air": 0,
+      "res_fire": 0,
+      "res_earth": 25,
+      "res_water": 0,
+      "res_air": 0,
+      "min_gold": 0,
+      "max_gold": 1,
+      "drops": [
+        {
+          "code": "yellow_slimeball",
+          "rate": 20,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Green Slime",
+      "code": "green_slime",
+      "level": 4,
+      "hp": 80,
+      "attack_fire": 0,
+      "attack_earth": 0,
+      "attack_water": 0,
+      "attack_air": 12,
+      "res_fire": 0,
+      "res_earth": 0,
+      "res_water": 0,
+      "res_air": 25,
+      "min_gold": 0,
+      "max_gold": 1,
+      "drops": [
+        {
+          "code": "green_slimeball",
+          "rate": 20,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Blue Slime",
+      "code": "blue_slime",
+      "level": 6,
+      "hp": 120,
+      "attack_fire": 0,
+      "attack_earth": 0,
+      "attack_water": 15,
+      "attack_air": 0,
+      "res_fire": 0,
+      "res_earth": 0,
+      "res_water": 25,
+      "res_air": 0,
+      "min_gold": 0,
+      "max_gold": 1,
+      "drops": [
+        {
+          "code": "blue_slimeball",
+          "rate": 20,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Red Slime",
+      "code": "red_slime",
+      "level": 7,
+      "hp": 120,
+      "attack_fire": 18,
+      "attack_earth": 0,
+      "attack_water": 0,
+      "attack_air": 0,
+      "res_fire": 25,
+      "res_earth": 0,
+      "res_water": 0,
+      "res_air": 0,
+      "min_gold": 0,
+      "max_gold": 1,
+      "drops": [
+        {
+          "code": "red_slimeball",
+          "rate": 20,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Cow",
+      "code": "cow",
+      "level": 8,
+      "hp": 280,
+      "attack_fire": 0,
+      "attack_earth": 0,
+      "attack_water": 0,
+      "attack_air": 21,
+      "res_fire": 0,
+      "res_earth": -30,
+      "res_water": 30,
+      "res_air": 0,
+      "min_gold": 0,
+      "max_gold": 1,
+      "drops": [
+        {
+          "code": "raw_beef",
+          "rate": 20,
+          "min_quantity": 1,
+          "max_quantity": 1
+        },
+        {
+          "code": "milk_bucket",
+          "rate": 25,
+          "min_quantity": 1,
+          "max_quantity": 1
+        },
+        {
+          "code": "cowhide",
+          "rate": 16,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Mushmush",
+      "code": "mushmush",
+      "level": 10,
+      "hp": 350,
+      "attack_fire": 16,
+      "attack_earth": 0,
+      "attack_water": 16,
+      "attack_air": 0,
+      "res_fire": 20,
+      "res_earth": 20,
+      "res_water": 0,
+      "res_air": -30,
+      "min_gold": 0,
+      "max_gold": 2,
+      "drops": [
+        {
+          "code": "mushroom",
+          "rate": 20,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Flying Serpent",
+      "code": "flying_serpent",
+      "level": 12,
+      "hp": 360,
+      "attack_fire": 0,
+      "attack_earth": 0,
+      "attack_water": 0,
+      "attack_air": 34,
+      "res_fire": -20,
+      "res_earth": 0,
+      "res_water": -20,
+      "res_air": 40,
+      "min_gold": 0,
+      "max_gold": 2,
+      "drops": [
+        {
+          "code": "flying_wing",
+          "rate": 20,
+          "min_quantity": 1,
+          "max_quantity": 1
+        },
+        {
+          "code": "serpent_skin",
+          "rate": 20,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Wolf",
+      "code": "wolf",
+      "level": 15,
+      "hp": 400,
+      "attack_fire": 0,
+      "attack_earth": 0,
+      "attack_water": 18,
+      "attack_air": 18,
+      "res_fire": -10,
+      "res_earth": -10,
+      "res_water": 10,
+      "res_air": 10,
+      "min_gold": 0,
+      "max_gold": 3,
+      "drops": [
+        {
+          "code": "raw_wolf_meat",
+          "rate": 20,
+          "min_quantity": 1,
+          "max_quantity": 1
+        },
+        {
+          "code": "wolf_bone",
+          "rate": 20,
+          "min_quantity": 1,
+          "max_quantity": 1
+        },
+        {
+          "code": "wolf_hair",
+          "rate": 20,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Skeleton",
+      "code": "skeleton",
+      "level": 18,
+      "hp": 480,
+      "attack_fire": 26,
+      "attack_earth": 18,
+      "attack_water": 0,
+      "attack_air": 0,
+      "res_fire": 30,
+      "res_earth": 0,
+      "res_water": -10,
+      "res_air": -10,
+      "min_gold": 0,
+      "max_gold": 3,
+      "drops": [
+        {
+          "code": "skeleton_bone",
+          "rate": 20,
+          "min_quantity": 1,
+          "max_quantity": 1
+        },
+        {
+          "code": "skeleton_skull",
+          "rate": 32,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Pig",
+      "code": "pig",
+      "level": 19,
+      "hp": 480,
+      "attack_fire": 0,
+      "attack_earth": 0,
+      "attack_water": 40,
+      "attack_air": 0,
+      "res_fire": 0,
+      "res_earth": -10,
+      "res_water": 40,
+      "res_air": 0,
+      "min_gold": 0,
+      "max_gold": 4,
+      "drops": [
+        {
+          "code": "pig_skin",
+          "rate": 20,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Ogre",
+      "code": "ogre",
+      "level": 20,
+      "hp": 680,
+      "attack_fire": 0,
+      "attack_earth": 80,
+      "attack_water": 0,
+      "attack_air": 0,
+      "res_fire": -20,
+      "res_earth": 30,
+      "res_water": 0,
+      "res_air": 0,
+      "min_gold": 0,
+      "max_gold": 3,
+      "drops": [
+        {
+          "code": "ogre_eye",
+          "rate": 20,
+          "min_quantity": 1,
+          "max_quantity": 1
+        },
+        {
+          "code": "ogre_skin",
+          "rate": 20,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Vampire",
+      "code": "vampire",
+      "level": 24,
+      "hp": 700,
+      "attack_fire": 24,
+      "attack_earth": 0,
+      "attack_water": 0,
+      "attack_air": 60,
+      "res_fire": 0,
+      "res_earth": -15,
+      "res_water": -15,
+      "res_air": 30,
+      "min_gold": 0,
+      "max_gold": 3,
+      "drops": [
+        {
+          "code": "vampire_blood",
+          "rate": 20,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Bandit Lizard",
+      "code": "bandit_lizard",
+      "level": 25,
+      "hp": 800,
+      "attack_fire": 44,
+      "attack_earth": 0,
+      "attack_water": 44,
+      "attack_air": 0,
+      "res_fire": -5,
+      "res_earth": 25,
+      "res_water": -5,
+      "res_air": 25,
+      "min_gold": 0,
+      "max_gold": 10,
+      "drops": [
+        {
+          "code": "bandit_armor",
+          "rate": 800,
+          "min_quantity": 1,
+          "max_quantity": 1
+        },
+        {
+          "code": "lizard_skin",
+          "rate": 20,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Death Knight",
+      "code": "death_knight",
+      "level": 28,
+      "hp": 820,
+      "attack_fire": 28,
+      "attack_earth": 28,
+      "attack_water": 28,
+      "attack_air": 28,
+      "res_fire": -5,
+      "res_earth": -5,
+      "res_water": -5,
+      "res_air": -5,
+      "min_gold": 0,
+      "max_gold": 4,
+      "drops": [
+        {
+          "code": "death_knight_sword",
+          "rate": 800,
+          "min_quantity": 1,
+          "max_quantity": 1
+        },
+        {
+          "code": "red_cloth",
+          "rate": 20,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Imp",
+      "code": "imp",
+      "level": 28,
+      "hp": 1800,
+      "attack_fire": 0,
+      "attack_earth": 50,
+      "attack_water": 0,
+      "attack_air": 0,
+      "res_fire": 10,
+      "res_earth": 60,
+      "res_water": 10,
+      "res_air": 10,
+      "min_gold": 0,
+      "max_gold": 15,
+      "drops": [
+        {
+          "code": "demoniac_dust",
+          "rate": 20,
+          "min_quantity": 1,
+          "max_quantity": 1
+        },
+        {
+          "code": "piece_of_obsidian",
+          "rate": 100,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Owlbear",
+      "code": "owlbear",
+      "level": 30,
+      "hp": 1100,
+      "attack_fire": 0,
+      "attack_earth": 0,
+      "attack_water": 80,
+      "attack_air": 0,
+      "res_fire": 0,
+      "res_earth": -20,
+      "res_water": 45,
+      "res_air": 0,
+      "min_gold": 0,
+      "max_gold": 4,
+      "drops": [
+        {
+          "code": "owlbear_hair",
+          "rate": 20,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Demon",
+      "code": "demon",
+      "level": 30,
+      "hp": 1060,
+      "attack_fire": 90,
+      "attack_earth": 0,
+      "attack_water": 0,
+      "attack_air": 0,
+      "res_fire": 20,
+      "res_earth": 0,
+      "res_water": -10,
+      "res_air": 0,
+      "min_gold": 0,
+      "max_gold": 15,
+      "drops": [
+        {
+          "code": "demon_horn",
+          "rate": 20,
+          "min_quantity": 1,
+          "max_quantity": 1
+        },
+        {
+          "code": "piece_of_obsidian",
+          "rate": 20,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Lich",
+      "code": "lich",
+      "level": 30,
+      "hp": 1500,
+      "attack_fire": 60,
+      "attack_earth": 60,
+      "attack_water": 0,
+      "attack_air": 0,
+      "res_fire": 24,
+      "res_earth": 24,
+      "res_water": 18,
+      "res_air": 18,
+      "min_gold": 0,
+      "max_gold": 15,
+      "drops": [
+        {
+          "code": "life_crystal",
+          "rate": 3000,
+          "min_quantity": 1,
+          "max_quantity": 1
+        },
+        {
+          "code": "lich_crown",
+          "rate": 800,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Cultist Acolyte",
+      "code": "cultist_acolyte",
+      "level": 33,
+      "hp": 1550,
+      "attack_fire": 0,
+      "attack_earth": 65,
+      "attack_water": 0,
+      "attack_air": 65,
+      "res_fire": -10,
+      "res_earth": 10,
+      "res_water": -10,
+      "res_air": 40,
+      "min_gold": 0,
+      "max_gold": 15,
+      "drops": [
+        {
+          "code": "magic_stone",
+          "rate": 20,
+          "min_quantity": 1,
+          "max_quantity": 1
+        },
+        {
+          "code": "cursed_book",
+          "rate": 32,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Cultist Emperor",
+      "code": "cultist_emperor",
+      "level": 35,
+      "hp": 1800,
+      "attack_fire": 0,
+      "attack_earth": 40,
+      "attack_water": 40,
+      "attack_air": 90,
+      "res_fire": 20,
+      "res_earth": 10,
+      "res_water": 0,
+      "res_air": -10,
+      "min_gold": 0,
+      "max_gold": 15,
+      "drops": [
+        {
+          "code": "malefic_cloth",
+          "rate": 250,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    }
+  ],
+  "total": 21,
+  "page": 1,
+  "size": 100,
+  "pages": 1
+}
