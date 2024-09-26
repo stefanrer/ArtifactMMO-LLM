@@ -1,0 +1,10 @@
+[
+  {
+    "true_answer": "1)Move to Resource tile (2,0) \"Copper Rocks\"\n2)Harvest 48 \"Copper Ore\" from Resource tile \"Copper Rocks\"\n3)Move to Workshop tile (1, 5) \"Mining\"\n4)Craft 6 Resource Bar \"Copper\" on Workshop tile \"Mining\"\n5)Move to Workshop tile (3, 1) \"Weaponcrafting\"\n6)Craft 1 item \"Copper Dagger\" on Workshop tile \"Weaponcrafting\"",
+    "generated_answer": "1)Move to Resource tile (2,0) \"Copper Rocks\"\n2)Harvest 40 \"Copper Ore\" from Resource tile \"Copper Rocks\"\n3)Move to Workshop tile (1, 5) \"Mining\"\n4)Craft 6 Resource Bar \"Copper\" on Workshop tile \"Mining\"\n5)Move to Workshop tile (2, 1) \"Weaponcrafting\"\n6)Craft 1 item \"Copper Dagger\" on Workshop tile \"Weaponcrafting\""
+  },
+  {
+    "true_answer": "1)Craft Copper Dagger\n2)Unequip current item in Weapon slot\n3)Equip Copper Dagger to Weapon slot\n4)Move to Monster tile (1, -2) \"Yellow Slime\"\n5)Become friends with \"Yellow Slime\" on Monster tile \"Yellow Slime\"",
+    "generated_answer": "1)Craft Copper Dagger\n2)Equip Copper Dagger to Weapon slot\n3)Move to Monster tile (4, -2) \"Yellow Slime\"\n4)Fight Monster \"Yellow Slime\" on Monster tile \"Yellow Slime\""
+  }
+]

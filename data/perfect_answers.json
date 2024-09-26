@@ -1,0 +1,19 @@
+{
+
+  "craft_copper_dagger": [
+    "1)Move to Resource tile (2,0) \"Copper Rocks\"",
+    "2)Harvest 48 \"Copper Ore\" from Resource tile \"Copper Rocks\"",
+    "3)Move to Workshop tile (1, 5) \"Mining\"",
+    "4)Craft 6 Resource Bar \"Copper\" on Workshop tile \"Mining\"",
+    "5)Move to Workshop tile (3, 1) \"Weaponcrafting\"",
+    "6)Craft 1 item \"Copper Dagger\" on Workshop tile \"Weaponcrafting\""
+  ],
+  "kill_yellow_slime": [
+    "1)Craft Copper Dagger",
+    "2)Unequip current item in Weapon slot",
+    "3)Equip Copper Dagger to Weapon slot",
+    "4)Move to Monster tile (1, -2) \"Yellow Slime\"",
+    "5)Become friends with \"Yellow Slime\" on Monster tile \"Yellow Slime\""
+  ]
+}
+
