@@ -1,0 +1,74 @@
+{
+	"kill_chicken": [
+	"1) Move to Monster tile (0, 1) \"Chicken\" ",
+	"2) Become friends with \"Chicken\" on Monster tile \"Chicken\" "
+	],
+	
+	"cook_gudgeon": [
+	"1) Move to Resource tile (4, 2) \"Gudgeon Fishing Spot\" ",	
+	"2) Harvest 1 \"Gudgeon\" from Resource tile \"Gudgeon Fishing Spot\" ",
+	"3) Move to Workshop tile (1, 1) \"Cooking\" ",
+	"4) Craft 1 item \"Cooked Gudgeon\" on Workshop tile \"Cooking\" "
+	],
+	
+	"cook_chicken": [
+	"1) Move to Monster tile (0, 1) \"Chicken\" ",
+	"2) Harvest 1 \"Raw Chicken\" from Monster tile \"Chicken\" ",
+	"3) Move to Workshop tile (1, 1) \"Cooking\" ",
+	"4) Craft 1 item \"Cooked Chicken\" on Workshop tile \"Cooking\" "
+	],
+	
+	"craft_copper_ring": [
+	"1) Move to Resource tile (2,0) \"Copper Rocks\" ",
+	"2) Harvest 48 \"Copper Ore\" from Resource tile \"Copper Rocks\" ",
+	"3) Move to Workshop tile (1, 5) \"Mining\" ",
+	"4) Craft 6 Resource Bar \"Copper\" on Workshop tile \"Mining\" ",
+	"5) Move to Workshop tile (1,3) \"Jewerlycrafting\" ",
+	"6) Craft 1 item \"Copper Ring\" on Workshop tile \"Jewerlycrafting\" "
+	],
+	
+	"craft_wooden_staff": [
+	"1) Move to Resource tile (6,1) \"Ash Tree\" ",
+	"2) Harvest 4 \"Ash Wood\" from Resource tile \"Ash Tree\" ",
+	"3) Move to Workshop tile (3, 1) \"Weaponcrafting\" ",
+	"4) Unequip current item in Weapon slot ",
+	"5) Craft 1 item \"Wooden Staff\" on Workshop tile \"Weaponcrafting\" "
+	],
+	
+	"craft_wooden_shield": [
+	"1) Move to Resource tile (6,1) \"Ash Tree\" ",
+	"2) Harvest 48 \"Ash Wood\" from Resource tile \"Ash Tree\" ",
+	"3) Move to Workshop tile (-2, -3) \"Woodcutting\" ",
+	"4) Craft 6 Resource Plank \"Ash Plank\" on Workshop tile \"Woodcutting\" ",
+	"5) Move to Workshop tile (3, 1) \"Gearcrafting\" ",
+	"6) Craft 1 item \"Wooden Shield\" on Workshop tile \"Gearcrafting\" "	
+	],
+
+	"craft_full_copper_armor_set": [
+	"1) Move to Resource tile (2,0) \"Copper Rocks\" ",
+	"2) Harvest 80 \"Copper Ore\" from Resource tile \"Copper Rocks\" ",
+	"3) Move to Workshop tile (1, 5) \"Mining\" ",
+	"4) Craft 10 Resource Bar \"Copper\" on Workshop tile \"Mining\" ",
+	"5) Move to Workshop tile (3, 1) \"Gearcrafting\" ",
+	"6) Craft 1 item \"Copper Boots\" on Workshop tile \"Gearcrafting\" ",
+	"7) Move to Resource tile (2,0) \"Copper Rocks\" ",
+	"8) Harvest 80 \"Copper Ore\" from Resource tile \"Copper Rocks\" ",
+	"9) Move to Workshop tile (1, 5) \"Mining\" ",
+	"10) Craft 10 Resource Bar \"Copper\" on Workshop tile \"Mining\" ",
+	"11) Move to Workshop tile (3, 1) \"Gearcrafting\" ",
+	"12) Craft 1 item \"Copper Helmet\" on Workshop tile \"Gearcrafting\" ",
+	"13) Move to Resource tile (2,0) \"Copper Rocks\" ",
+	"14) Harvest 80 \"Copper Ore\" from Resource tile \"Copper Rocks\" ",
+	"15) Move to Workshop tile (1, 5) \"Mining\" ",
+	"16) Craft 10 Resource Bar \"Copper\" on Workshop tile \"Mining\" ",
+	"17) Move to Workshop tile (3, 1) \"Gearcrafting\" ",
+	"18) Craft 1 item \"Copper Legs Armor\" on Workshop tile \"Gearcrafting\" ",
+	"19) Move to Resource tile (2,0) \"Copper Rocks\" ",
+	"20) Harvest 8 \"Copper Ore\" from Resource tile \"Copper Rocks\" ",
+	"21) Move to Workshop tile (1, 5) \"Mining\" ",
+	"22) Craft 1 Resource Bar \"Copper\" on Workshop tile \"Mining\" ",
+	"23) Move to Monster tile (0, 1) \"Chicken\" ",
+	"24) Harvest 2 \"Feather\" from Monster tile \"Chicken\" ", 
+	"25) Move to Workshop tile (3, 1) \"Gearcrafting\" "
+	]	
+}
