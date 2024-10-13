@@ -90,9 +90,9 @@ class BaseAPI:
         finally:
             return response_code, response_data
 
-    def get_all(self, method: AnyStr, params: Dict = {}):
-        params = {"page": 1, "size": 100}
-
+    def get_all(self, method: AnyStr, params=None):
+        if params is None:
+            params = {"page": 1, "size": 100}
         all_data = []
 
         _, response = self.get(method=method, params=params)

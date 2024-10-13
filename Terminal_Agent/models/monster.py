@@ -105,7 +105,7 @@ class AllMonsters:
             if item.code == drop:
                 return item.rate
 
-    def get(self, code: AnyStr) -> Monster:
+    def get(self, code: AnyStr) -> Monster | None:
         for monster in self.monsters:
             if monster.code == code:
                 return monster

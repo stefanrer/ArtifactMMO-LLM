@@ -75,11 +75,11 @@ class AllItems:
         self.items = [Item.from_dict(item) for item in items]
 
     def filter(
-        self,
-        craft_material: AnyStr = None,
-        craft_skill: AnyStr = None,
-        max_level: int = None,
-        min_level: int = None,
+            self,
+            craft_material: AnyStr = None,
+            craft_skill: AnyStr = None,
+            max_level: int = None,
+            min_level: int = None,
     ) -> List[Item]:
 
         filtered_craft_material = []

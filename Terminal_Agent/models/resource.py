@@ -35,7 +35,7 @@ class AllResources:
         self.resources = [Resource.from_dict(resource) for resource in resources]
 
     def filter(
-        self, drop: AnyStr = None, max_level: int = None, min_level: int = None
+            self, drop: AnyStr = None, max_level: int = None, min_level: int = None
     ) -> List[Resource]:
 
         filtered_drop = []
@@ -66,7 +66,7 @@ class AllResources:
 
         return filtered_min_level
 
-    def get_drops(self, drop: AnyStr = None) -> Resource:
+    def get_drops(self, drop: AnyStr = None) -> Resource | None:
 
         filtered_drops = self.filter(drop=drop)
 

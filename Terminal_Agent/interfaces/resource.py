@@ -1,5 +1,6 @@
-from .base import BaseAPI
-from ..models.resource import AllResources
+from interfaces import BaseAPI
+
+from models.resource import AllResources
 
 
 class ResourceAPI(BaseAPI):

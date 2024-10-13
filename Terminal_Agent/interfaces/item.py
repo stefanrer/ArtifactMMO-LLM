@@ -1,5 +1,6 @@
-from .base import BaseAPI
-from ..models.item import AllItems
+from interfaces import BaseAPI
+
+from models.item import AllItems
 
 
 class ItemAPI(BaseAPI):

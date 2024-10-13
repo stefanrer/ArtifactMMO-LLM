@@ -1,6 +1,6 @@
-from .base import BaseAPI
+from interfaces import BaseAPI
 
-from ..models.monster import AllMonsters
+from models.monster import AllMonsters
 
 
 class MonsterAPI(BaseAPI):

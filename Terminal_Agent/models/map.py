@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import List, Dict, Optional, AnyStr, Any, Union
+from typing import List, Dict, Optional, AnyStr
 
 
 @dataclass
@@ -31,6 +31,9 @@ class Map:
             y=data.get("y", 0),
             content=content,
         )
+
+    def __str__(self):
+        return f"{self.name}({self.x}, {self.y}): {self.content}"
 
 
 class AllMaps:

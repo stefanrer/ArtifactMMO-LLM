@@ -1,8 +1,6 @@
-from .base import BaseAPI
-from typing import List, Dict, Optional, AnyStr, Any, Union
-from ArtifactPOMDP.models.map import AllMaps, Map
-
-from typing import List
+from interfaces import BaseAPI
+from typing import Optional
+from models import AllMaps, Map
 
 
 class MapAPI(BaseAPI):

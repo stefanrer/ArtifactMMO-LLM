@@ -1,13 +1,9 @@
 from dataclasses import dataclass, field
+from math import floor, ceil
 from typing import List, Dict, Optional, AnyStr
 
-from .resource import AllResources
-from .monster import Monster, AllMonsters
-from .item import Item, AllItems
-
-
-from copy import copy
-from math import floor, ceil
+from models import Item, AllItems
+from models import Monster
 
 
 @dataclass
@@ -230,4 +226,3 @@ class Character:
                     return False
 
         return False
-

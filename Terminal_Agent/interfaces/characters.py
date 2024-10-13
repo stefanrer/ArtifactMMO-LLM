@@ -1,5 +1,5 @@
-from .base import BaseAPI
-from ..models.character import Character
+from interfaces import BaseAPI
+from models import Character
 
 from typing import AnyStr, List
 import random
@@ -35,8 +35,4 @@ class MyCharactersAPI(BaseAPI):
         for i in range(1, 6):
             self.create(f"character_{i}")
             print(f"character_{i}")
-        return self.get_all()
-
-
-
-
+        return self.get_all_characters()
