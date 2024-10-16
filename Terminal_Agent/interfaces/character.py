@@ -15,7 +15,6 @@ class MyCharacterAPI(MapAPI):
         Moves a character on the map using the provided map's X and Y position.
         :param Map target: Target Map.
         """
-        print(f"The character is moving to {target}")
         method = f"/my/{self.character_data.name}/action/move"
         response_code, _ = self.post(method=method, body={"x": target.x, "y": target.y})
         if response_code == 200:  # Success
@@ -23,7 +22,8 @@ class MyCharacterAPI(MapAPI):
         elif response_code == 404:
             print("Map not found")
         elif response_code == 490:
-            print("Character already at destination")
+            # print("Character already at destination")
+            pass
         else:
             print("Unknown Error")
         self._update_character()
@@ -37,7 +37,7 @@ class MyCharacterAPI(MapAPI):
         if response_code == 200:  # Success
             if response_data["data"]["fight"]["result"] == "win":
                 print("Fight Won")
-                print(f"Drops: {response_data['data']['fight']['drops']}")
+                print(f"Drops: xp={response_data['data']['fight']['xp']}, gold={response_data['data']['fight']['gold']}, items={response_data['data']['fight']['drops']}")
             else:
                 print("Fight Lost")
         elif response_code == 497:
@@ -252,7 +252,7 @@ class MyCharacterAPI(MapAPI):
             print("Unknown Error")
         self._update_character()
 
-    def recycle(self, code: AnyStr, quantity: int = 1) -> None:
+    def recycle_item(self, code: AnyStr, quantity: int = 1) -> None:
         """
         Recycling an item. The character must be on a map with a workshop (only for equipments and weapons)
         :param str code: Item code. Match pattern: ^[a-zA-Z0-9_-]+$

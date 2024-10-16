@@ -1,4 +1,4 @@
-from controller import AllActions
+from controller.actions import AllActions
 from models import Character
 from interfaces import MyCharacterAPI
 

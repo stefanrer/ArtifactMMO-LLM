@@ -9,6 +9,12 @@ class Drop:
     min_quantity: int
     max_quantity: int
 
+    def __str__(self):
+        return f"Drop(code={self.code}, drop_rate={round(100/self.rate, 2)}%, min_quantity={self.min_quantity}, max_quantity={self.max_quantity})"
+
+    def __repr__(self):
+        return f"Drop(code={self.code}, drop_rate={round(100/self.rate, 2)}%, min_quantity={self.min_quantity}, max_quantity={self.max_quantity})"
+
 
 @dataclass
 class Monster:
@@ -47,6 +53,15 @@ class Monster:
             min_gold=data.get("min_gold", 0),
             max_gold=data.get("max_gold", 0),
             drops=drops,
+        )
+
+    def __repr__(self):
+        return (
+            f"Monster: name={self.name}, code={self.code}, level={self.level}\n"
+            f"Stats: hp={self.hp}, attack_fire={self.attack_fire}, attack_earth={self.attack_earth}, attack_water={self.attack_water},"
+            f" attack_air={self.attack_air}, res_fire={self.res_fire}, res_earth={self.res_earth},"
+            f" res_water={self.res_water}, res_air={self.res_air}\n"
+            f"Drops: min_gold={self.min_gold}, max_gold={self.max_gold}, items={self.drops}"
         )
 
 
@@ -111,3 +126,11 @@ class AllMonsters:
                 return monster
 
         return None
+
+    def check_drops(self, monster_code: AnyStr) -> List[Drop]:
+        for resource in self.monsters:
+            if resource.code == monster_code:
+                drops = resource.drops
+                # drops = [drop for drop in drops if drop.rate == 1]
+                return drops
+        return []

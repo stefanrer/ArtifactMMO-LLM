@@ -9,6 +9,12 @@ class Drop:
     min_quantity: int
     max_quantity: int
 
+    def __str__(self):
+        return f"Drop(code={self.code}, drop_rate={round(100/self.rate, 2)}%, min_quantity={self.min_quantity}, max_quantity={self.max_quantity})"
+
+    def __repr__(self):
+        return f"Drop(code={self.code}, drop_rate={round(100/self.rate, 2)}%, min_quantity={self.min_quantity}, max_quantity={self.max_quantity})"
+
 
 @dataclass
 class Resource:
@@ -27,6 +33,12 @@ class Resource:
             skill=data.get("skill", ""),
             level=data.get("level", 0),
             drops=drops,
+        )
+
+    def __repr__(self):
+        return (
+            f"Resource: name={self.name}, code={self.code}, skill={self.skill}, skill_level={self.level}\n"
+            f"drops: {self.drops}"
         )
 
 
@@ -83,3 +95,18 @@ class AllResources:
                 picked_resource = resource
 
         return picked_resource
+
+    def get(self, code: AnyStr) -> Resource | None:
+        for monster in self.resources:
+            if monster.code == code:
+                return monster
+        return None
+
+    def check_drops(self, resource_code: AnyStr) -> List[Drop]:
+        for resource in self.resources:
+            if resource.code == resource_code:
+                drops = resource.drops
+                # drops = [drop for drop in drops if drop.rate == 1]
+                return drops
+        return []
+
