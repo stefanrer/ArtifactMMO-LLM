@@ -19,7 +19,7 @@ def get_monster_drops(map_content: Content):
     print(drops)
 
 
-def fight_monster(character: MyCharacterAPI, map_content: Content):
+def fight_menu(character: MyCharacterAPI, map_content: Content):
     monster = monsters.get(map_content.code)
     print(monster)
     while True:

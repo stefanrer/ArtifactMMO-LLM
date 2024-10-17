@@ -18,7 +18,7 @@ def get_resource_drops(map_content: Content):
     print(drops)
 
 
-def gather_resource(character: MyCharacterAPI, map_content: Content):
+def gather_menu(character: MyCharacterAPI, map_content: Content):
     resource = resources.get(map_content.code)
     print(resource)
     while True:

@@ -33,7 +33,7 @@ def possible_actions(character: MyCharacterAPI):
     return perception, actions
 
 
-def move_character(character: MyCharacterAPI):
+def move_menu(character: MyCharacterAPI):
     while True:
         perception, actions = possible_actions(character)
         print(f"Current Map: {perception.current_map}")

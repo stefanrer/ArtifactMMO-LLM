@@ -287,7 +287,7 @@ class MyCharacterAPI(MapAPI):
         :param str code: Item code. Match pattern: ^[a-zA-Z0-9_-]+$
         :param int quantity: Item quantity. >= 1
         """
-        method = f"/my/{self.character_data.name}/action/recycling"
+        method = f"/my/{self.character_data.name}/action/delete"
         response_code, response_data = self.post(
             method=method, body={"code": code, "quantity": quantity}
         )

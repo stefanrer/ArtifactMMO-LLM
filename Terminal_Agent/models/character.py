@@ -12,6 +12,9 @@ class InventoryItem:
     code: str
     quantity: int
 
+    def __repr__(self):
+        return f"item={self.code}, quantity={self.quantity}"
+
 
 @dataclass
 class Character:
@@ -102,6 +105,29 @@ class Character:
         character.inventory = inventory_items
 
         return character
+
+    def get_stats(self):
+        print(f"Stats: hp={self.hp}, haste={self.haste}, critical_strike={self.critical_strike}, stamina={self.stamina}\n"
+              f"Attack: fire={self.attack_fire}, earth={self.attack_earth}, water={self.attack_water}, air={self.attack_air}\n"
+              f"Damage: fire={self.dmg_fire}, earth={self.dmg_earth}, water={self.dmg_water}, air={self.dmg_air}\n"
+              f"Resistance: fire={self.res_fire}, earth={self.res_earth}, water={self.res_water}, air={self.res_air}")
+
+    def get_skills(self):
+        print(f"Mining: Level={self.mining_level}, xp={self.mining_xp}/{self.mining_max_xp}\n"
+              f"Woodcutting: Level={self.woodcutting_level}, xp={self.woodcutting_xp}/{self.woodcutting_max_xp}\n"
+              f"Fishing: Level={self.fishing_level}, xp={self.fishing_xp}/{self.fishing_max_xp}\n"
+              f"Weaponcrafting: Level={self.weaponcrafting_level}, xp={self.weaponcrafting_xp}/{self.weaponcrafting_max_xp}\n"
+              f"Gearcrafting: Level={self.gearcrafting_level}, xp={self.gearcrafting_xp}/{self.gearcrafting_max_xp}\n"
+              f"Jewelrycrafting: Level={self.jewelrycrafting_level}, xp={self.jewelrycrafting_xp}/{self.jewelrycrafting_max_xp}\n"
+              f"Cooking: Level={self.cooking_level}, xp={self.cooking_xp}/{self.cooking_max_xp}")
+
+    def get_inventory(self):
+        inventory = []
+        for item in self.inventory:
+            if item.code == '':
+                continue
+            inventory.append(item)
+        return inventory
 
     def get_slot(self, slot: AnyStr) -> AnyStr | None:
         try:
