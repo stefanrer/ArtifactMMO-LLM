@@ -22,6 +22,7 @@ def gather_menu(character: MyCharacterAPI, map_content: Content):
     resource = resources.get(map_content.code)
     print(resource)
     while True:
+        print("Gathering Menu")
         actions = possible_actions(character, map_content)
         print("Select Action:")
         for i, action in enumerate(actions):

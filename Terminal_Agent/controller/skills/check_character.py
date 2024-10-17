@@ -22,6 +22,7 @@ def get_inventory(character: MyCharacterAPI):
 
 def delete_menu(character: MyCharacterAPI):
     while True:
+        print("Delete Item Menu")
         print("Select Item to Delete:")
         items = character.character_data.get_inventory()
         print(f"0)Back")
@@ -29,7 +30,7 @@ def delete_menu(character: MyCharacterAPI):
             print(f"{i+1}){item.code}, quantity: {item.quantity}")
         item_number = int(input("Enter Item number:"))
         if item_number > len(items) or item_number < 0:
-            print("Invalid action number")
+            print("Invalid Item number")
             continue
         if item_number == 0:
             break
@@ -37,11 +38,11 @@ def delete_menu(character: MyCharacterAPI):
         if quantity < 0 or quantity >= 100:
             quantity = 0
         character.delete_item(items[item_number-1].code, quantity)
-        print(f"Deleted {quantity} {items[item_number-1].code}")
 
 
 def character_menu(character: MyCharacterAPI):
     while True:
+        print("Character Menu")
         print(f"Current character: {character.character_data.name}, Level: {character.character_data.level}")
         actions = possible_actions(character)
         print("Select Action:")

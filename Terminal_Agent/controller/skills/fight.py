@@ -23,6 +23,7 @@ def fight_menu(character: MyCharacterAPI, map_content: Content):
     monster = monsters.get(map_content.code)
     print(monster)
     while True:
+        print("Fight Menu")
         actions = possible_actions(character, map_content)
         print("Select Action:")
         for i, action in enumerate(actions):

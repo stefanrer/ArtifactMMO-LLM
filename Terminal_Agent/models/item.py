@@ -13,6 +13,9 @@ class CraftItem:
     code: str
     quantity: int
 
+    def __repr__(self):
+        return f"item={self.code}, quantity={self.quantity}"
+
 
 @dataclass
 class Craft:
