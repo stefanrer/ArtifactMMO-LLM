@@ -7,6 +7,7 @@ from controller.skills.gather import gather_menu
 from controller.skills.fight import fight_menu
 from controller.skills.check_character import character_menu
 from controller.skills.craft import craft_menu
+from controller.skills.bank import bank_menu
 
 
 class AllActions:
@@ -29,7 +30,8 @@ class AllActions:
                     Action("Gathering Menu", "Open Gathering Menu", lambda: gather_menu(self.character, perception.current_map.content)))
             if perception.current_map.content.type == "workshop":
                 actions.append(Action("Crafting Menu", "Open Crafting Menu", lambda: craft_menu(self.character, perception.current_map.content)))
-            # Action("Equip_item", "Equip an item on your character", self.character.equip)
+            if perception.current_map.content.type == "bank":
+                actions.append(Action("Bank Menu", "Open Bank Menu", lambda: bank_menu(self.character)))
         return actions
 
     def start(self):

@@ -11,6 +11,9 @@ class Bank:
     def from_dict(data: Dict) -> "Bank":
         return Bank(code=data.get("code", ""), quantity=data.get("quantity", 0))
 
+    def __repr__(self):
+        return f"item={self.code}, quantity={self.quantity}"
+
 
 class AllBankItems:
     def __init__(self, items: List[Dict]) -> None:

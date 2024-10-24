@@ -11,36 +11,37 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 config = dotenv_values(".env")
 
 
-def cooldown():
-    def decorator(function):
-        def wrapper(self: "BaseAPI", *args, **kwargs):
-            response_code, response_data = function(self, *args, **kwargs)
-            if response_code == 200 or not self.cooldown_expires:
-                print(function, self.cooldown_expires)
-                return response_code, response_data
-
-            expires = datetime.strptime(
-                self.cooldown_expires, "%Y-%m-%dT%H:%M:%S.%fZ"
-            ).replace(tzinfo=timezone.utc)
-            now = datetime.now(timezone.utc)
-            sleep_duration = (expires - now).total_seconds()
-
-            print(f"sleep_duration = {sleep_duration}")
-
-            if sleep_duration > 0:
-                sleep(sleep_duration)
-
-            response_code, response_data = function(self, *args, **kwargs)
-            return response_code, response_data
-
-        return wrapper
-
-    return decorator
+# def cooldown():
+#     def decorator(function):
+#         def wrapper(self: "BaseAPI", *args, **kwargs):
+#             response_code, response_data = function(self, *args, **kwargs)
+#             if response_code == 200 or not self.cooldown_expires:
+#                 print(function, self.cooldown_expires)
+#                 return response_code, response_data
+#
+#             expires = datetime.strptime(
+#                 self.cooldown_expires, "%Y-%m-%dT%H:%M:%S.%fZ"
+#             ).replace(tzinfo=timezone.utc)
+#             now = datetime.now(timezone.utc)
+#             sleep_duration = (expires - now).total_seconds()
+#
+#             print(f"sleep_duration = {sleep_duration}")
+#
+#             if sleep_duration > 0:
+#                 sleep(sleep_duration)
+#
+#             response_code, response_data = function(self, *args, **kwargs)
+#             return response_code, response_data
+#
+#         return wrapper
+#
+#     return decorator
 
 
 def cooldown_seconds():
     def decorator(function):
         def wrapper(self: "BaseAPI", *args, **kwargs):
+            # print(function)
             response_code, response_data = function(self, *args, **kwargs)
             if response_code == 200 and self.cooldown_total_seconds == 0:
                 return response_code, response_data

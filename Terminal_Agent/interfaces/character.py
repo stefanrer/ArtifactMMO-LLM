@@ -156,6 +156,7 @@ class MyCharacterAPI(MapAPI):
         :param str code: Item code. Match pattern: ^[a-zA-Z0-9_-]+$
         :param int quantity: Item quantity. >= 1
         """
+        print(f"code={code}, quantity={quantity}")
         method = f"/my/{self.character_data.name}/action/bank/deposit"
         response_code, _ = self.post(
             method=method, body={"code": code, "quantity": quantity}
@@ -180,12 +181,13 @@ class MyCharacterAPI(MapAPI):
         :param str code: Item code. Match pattern: ^[a-zA-Z0-9_-]+$
         :param int quantity: Item quantity. >= 1
         """
+        print(f"code={code}, quantity={quantity}")
         method = f"/my/{self.character_data.name}/action/bank/withdraw"
         response_code, _ = self.post(
             method=method, body={"code": code, "quantity": quantity}
         )
         if response_code == 200:  # Success
-            print("Item successfully withdraw from your bank")
+            print("Item successfully withdrawn from your bank")
         elif response_code == 404:
             print("Item not found")
         elif response_code == 478:
